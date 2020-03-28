@@ -4,7 +4,9 @@
 // mergeSort.c
 //
 // Time Complexity: O(n*Log2(n))
-// Takes array, returns sorted array
+//
+// Space Complexity: 
+//
 //================================================
 //================================================
 #include "main.h"

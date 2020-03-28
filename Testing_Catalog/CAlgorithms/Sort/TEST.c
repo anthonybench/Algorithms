@@ -14,24 +14,23 @@ int main()
     InitRandom();
 
     // parameters
-    int MAX = 30000;                       // SWITCH //
+    int MAX = 20;                       // SWITCH //
     int MAXrange = MAX;                 // SWITCH //
-    int array1[MAX], array2[MAX], array3[MAX], array4[MAX];
+    int array1[MAX], array2[MAX], array3[MAX];
     for (int i = 0; i < MAX; ++i)
         array1[i] = GetRandom(1, MAXrange);
     for (int i = 0; i < MAX; ++i) {
         array2[i] = array1[i];
         array3[i] = array1[i];
-        array4[i] = array1[i];
     }
     clock_t t;
 
     // display input
     printf("Input Size: %d\n", MAX);
-    /*printf("[ ");                        // SWITCH (x4) //
+    printf("[ ");                        // SWITCH (x4) //
     for (int i = 0; i < MAX; ++i)       
         printf("%d ", array1[i]);       
-    printf("]\n");*/
+    printf("]\n");
     border('S');
     space(1);
     
@@ -41,10 +40,10 @@ int main()
     t = clock() - t;
     double timer = (double)t/CLOCKS_PER_SEC;
     printf("Selection Sort Timer: %fs\n", timer);
-    /*printf("[ ");                        // SWITCH (x4) //
+    printf("[ ");                        // SWITCH (x4) //
     for (int i = 0; i < MAX; ++i)       
         printf("%d ", array1[i]);       
-    printf("]\n");*/
+    printf("]\n");
     space(1);
     border('M');
 
@@ -56,10 +55,10 @@ int main()
     border('M');
     space(1);
     printf("Merge Sort Timer: %fs\n", timer);
-    /*printf("[ ");                        // SWITCH (x4) //
+    printf("[ ");                        // SWITCH (x4) //
     for (int i = 0; i < MAX; ++i)       
         printf("%d ", array2[i]);       
-    printf("]\n");*/
+    printf("]\n");
     space(1);
     border('M');
 
@@ -71,30 +70,14 @@ int main()
     border('M');
     space(1);
     printf("Quick Sort Timer: %fs\n", timer);
-    /*printf("[ ");                        // SWITCH (x4) //
+    printf("[ ");                        // SWITCH (x4) //
     for (int i = 0; i < MAX; ++i)       
         printf("%d ", array3[i]);       
-    printf("]\n");*/
+    printf("]\n");
     space(1);
-    border('M');
-
-    // HEAP SORT
-    t = clock();
-    heap_sort(array4, MAX);
-    t = clock() - t;
-    timer = (double)t/CLOCKS_PER_SEC;
-    border('M');
-    space(1);
-    printf("Heap Sort Timer: %fs\n", timer);
-    /*printf("[ ");                        // SWITCH (x4) //
-    for (int i = 0; i < MAX; ++i)       
-        printf("%d ", array4[i]);       
-    printf("]\n");*/
-    space(1);
-    border('M');
 
     // ERROR HANDELING
-    // *** Selection Sort is acting judge ***
+    // *** Selection Sort is the judge ***
     int errCode = 0;
     for (int i = 0; i < MAX; ++i) {
         if (array1[i] != array2[i]) {
@@ -105,10 +88,6 @@ int main()
             printf("Error at index: %d for quick_sort!!!\n", i);
             errCode = 1;
         }
-        /*if (array1[i] != array4[i]) {
-            printf("Error at index: %d for heap_sort!!!\n", i);
-            errCode = 1;
-        }*/
     }
     border('S');
     if (errCode == 0)

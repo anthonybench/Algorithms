@@ -4,9 +4,7 @@
 // quickSort.c
 //
 // Time Complexity: O(n*Log2(n))
-//
-// Space Complexity: 
-//
+// Takes array, returns sorted array
 //================================================
 //================================================
 #include "main.h"

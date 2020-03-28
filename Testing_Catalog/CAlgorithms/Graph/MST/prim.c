@@ -1,18 +1,18 @@
 //================================================
 //================================================
-// Heap Sort Algorithm
-// heapSort.C
+// Prim's Algorithm
+// prim.c
+//
+// Time Complexity:
+//
+// Space Complexity: 
+//
 //================================================
 //================================================
 #include "main.h"
 
-// utility
-void heapify(int* array) {
-    return;
-}
-
 // algorithm
-int heap_sort(int* array, int size) {
-    return 1;
+void prim() {
+    return;
 }
 

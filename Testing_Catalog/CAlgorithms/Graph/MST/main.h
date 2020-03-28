@@ -5,11 +5,25 @@
 //================================================
 //================================================
 #include <stdio.h>
+#include <math.h>
+#include <unistd.h>
+#include <limits.h>
 #include <string.h>
 #include <ctype.h>
 #include <stdlib.h>
 #include <time.h>
 #include <assert.h>
+
+
+/*****************************
+* Graph
+*****************************/
+// edge
+typedef struct {
+    int vertA;
+    int vertB;
+    int weight;
+} Edge;
 
 
 /*****************************
@@ -23,11 +37,10 @@ void border(char c);
 void InitRandom(void);
 unsigned int GetRandom(unsigned int minval, unsigned int maxval);
 
+// graph utility
+
+
 // algorithms
-void swap(int* array, int L, int R); // utility
-void selection_sort(int* array, int size);
-void merge(int* merged, int* arrayL, int* arrayR, int sizeL, int sizeR); // utility
-void merge_sort(int* array, int size);
-int partition(int* array, int low, int high);
-void quick_sort(int* array, int low, int high);
+void prim();
+void kruskal();
 
