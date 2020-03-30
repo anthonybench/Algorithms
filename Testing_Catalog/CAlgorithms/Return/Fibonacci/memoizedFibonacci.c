@@ -23,6 +23,7 @@ int memoized_fibonacci(int n, int* hashT) {
     int a = memoized_fibonacci(n - 1, hashT);
     int b = memoized_fibonacci(n - 2, hashT);
     hashT[n] = a + b;
+
     return hashT[n];
 }
 

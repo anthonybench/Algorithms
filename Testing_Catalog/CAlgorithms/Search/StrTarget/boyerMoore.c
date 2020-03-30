@@ -14,8 +14,7 @@
 #include "main.h"
 
 // algorithm
-int boyer_moore(char* text, char* pattern)
-{
+int boyer_moore(char* text, char* pattern) {
     //edge case
     if (!text || !pattern)
         return -1;

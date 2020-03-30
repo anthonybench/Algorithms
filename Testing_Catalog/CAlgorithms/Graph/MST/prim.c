@@ -12,7 +12,6 @@
 #include "main.h"
 
 // algorithm
-void prim() {
-    return;
+int prim(int N, int** A, Edge *elist) {
+    return 0;
 }
-

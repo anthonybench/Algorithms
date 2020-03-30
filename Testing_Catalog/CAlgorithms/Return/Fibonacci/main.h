@@ -20,7 +20,7 @@ void space(int n);
 void border(char c);
 
 // rng
-void InitRandom(void);
+void InitRandom();
 unsigned int GetRandom(unsigned int minval, unsigned int maxval);
 
 // algorithms

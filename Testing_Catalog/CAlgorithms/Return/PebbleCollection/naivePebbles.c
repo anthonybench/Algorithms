@@ -35,5 +35,6 @@ int naive(char** grid, int R, int C, int r, int c) {
 
     if (grid[r][c] == 'x')
         return max(1 + down, 1 + right);
+
     return max(down, right);
 }

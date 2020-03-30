@@ -18,10 +18,9 @@
 /*****************************
 * Graph
 *****************************/
-// edge
 typedef struct {
-    int vertA;
-    int vertB;
+    int vstart;
+    int vend;
     int weight;
 } Edge;
 
@@ -34,13 +33,18 @@ void space(int n);
 void border(char c);
 
 // rng
-void InitRandom(void);
+void InitRandom();
 unsigned int GetRandom(unsigned int minval, unsigned int maxval);
 
 // graph utility
-
+int input_graph(int **A);
+int print_graph(int N, int **A);
+int print_edge_list(Edge *elist, int N);
+void swap(Edge* array, int a, int b); //quicksort utility
+int partition(Edge* array, int low, int high); //quicksort utility
+void quick_sort(Edge* array, int low, int high);
 
 // algorithms
-void prim();
-void kruskal();
+int prim(int n, int **A, Edge *elist);
+int kruskal(int N, int **A, Edge *elist);
 

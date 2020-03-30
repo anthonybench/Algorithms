@@ -6,8 +6,7 @@
 //================================================
 #include "main.h"
 
-int main()
-{
+int main() {
     // open
     space(3);
     border('D');

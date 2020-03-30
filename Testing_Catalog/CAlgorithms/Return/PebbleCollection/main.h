@@ -20,15 +20,15 @@ void space(int n);
 void border(char c);
 
 // rng
-void InitRandom(void);
+void InitRandom();
 unsigned int GetRandom(unsigned int minval, unsigned int maxval);
 
 // algorithms
-int max(int a, int b); //utility
+int max(int a, int b); //general utility
 int naive(char** grid, int R, int C, int r, int c);
-int naive_pebbles(char** grid, int R, int C); //wrapper
+int naive_pebbles(char** grid, int R, int C); //naive wrapper
 int memoized(char** grid, int** hashT, int R, int C, int r, int c);
-int memoized_pebbles(char** grid, int** hashT, int R, int C); //wrapper
+int memoized_pebbles(char** grid, int** hashT, int R, int C); //memoized wrapper
 int tabular(char** grid, int** hashT, int R, int C, int r, int c);
-int tabular_pebbles(char** grid, int** hashT, int R, int C); //wrapper
+int tabular_pebbles(char** grid, int** hashT, int R, int C); //tabular wrapper
 

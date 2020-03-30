@@ -12,8 +12,7 @@
 #include "main.h"
 
 // utility
-void merge(int* merged, int* arrayL, int* arrayR, int sizeL, int sizeR)
-{
+void merge(int* merged, int* arrayL, int* arrayR, int sizeL, int sizeR) {
     // parameters
     int i = 0;
     int j = 0;
@@ -41,8 +40,7 @@ void merge(int* merged, int* arrayL, int* arrayR, int sizeL, int sizeR)
 }
 
 // algorithm
-void merge_sort(int* array, int size)
-{
+void merge_sort(int* array, int size) {
     //check for base case, else calculate midpoint
     if (size < 2)
         return;
@@ -68,4 +66,3 @@ void merge_sort(int* array, int size)
     
     return;
 }
-

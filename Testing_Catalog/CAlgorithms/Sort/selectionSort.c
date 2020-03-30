@@ -14,8 +14,7 @@
 #include "main.h"
 
 // utility
-void swap(int* array, int L, int R)
-{
+void swap(int* array, int L, int R) {
     int temp = array[L];
     array[L] = array[R];
     array[R] = temp;
@@ -24,8 +23,7 @@ void swap(int* array, int L, int R)
 }
 
 // algorithm
-void selection_sort(int* array, int size)
-{
+void selection_sort(int* array, int size) {
     //parameters
     int sortedInd = 0;
     int smallestInd = 0;

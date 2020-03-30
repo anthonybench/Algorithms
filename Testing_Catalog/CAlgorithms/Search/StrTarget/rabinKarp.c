@@ -14,8 +14,7 @@
 #include "main.h"
 
 // utility
-int stringHash(char* input, int start, int end, int modVal)
-{
+int stringHash(char* input, int start, int end, int modVal) {
     int res = 0;
 
     for (int i = start; i < end; ++i)
@@ -25,8 +24,7 @@ int stringHash(char* input, int start, int end, int modVal)
 }
 
 // algorithm
-int rabin_karp(char* text, char* pattern)
-{
+int rabin_karp(char* text, char* pattern) {
     //parameters
     int modVal = 181; // SWITCH //
     int n = strlen(text);
@@ -50,6 +48,7 @@ int rabin_karp(char* text, char* pattern)
         textVal = (textVal - left + right) % modVal;
         ++marker;
         }
+
     return -1;
 }
 

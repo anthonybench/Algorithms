@@ -6,14 +6,18 @@
 //================================================
 #include "main.h"
 
-// prints white space
+
+/******************************
+ Printing Tools
+******************************/
+// blank lines
 void space(int n)
 {
     for (int i = 0; i < n; ++i)
         printf("\n");
 }
 
-// prints border
+// borders
 void border(char c)
 {
     if (tolower(c) == 's')
@@ -29,9 +33,12 @@ void border(char c)
     }
 }
 
-/*IMPORTANT: CALL THIS FUNCTION ONCE AT THE START OF THE PROGRAM!*/
-/*INITIALIZAES THE RANDOM NUMBER GENERATOR*/
-void InitRandom(void)
+
+/******************************
+ Printing Tools
+******************************/
+// seed
+void InitRandom()
 {
 	time_t timestr;
 
@@ -40,27 +47,25 @@ void InitRandom(void)
 #else
 	time(&timestr);
 #endif
-
 	srand((unsigned int)timestr);
+
+    return;
 }
 
-/*RETURNS A RANDOM UNSIGNED INTEGER IN THE INTERVAL [MINVAL,MAXVAL]*/
-unsigned int GetRandom(unsigned int minval, unsigned int maxval)
-{
+// generator
+unsigned int GetRandom(unsigned int minval, unsigned int maxval) {
 	char temp[sizeof(int)];
 	int* val;
 	int i;
-	
 
 	val = (int*)temp;
 
 	for (i = 0; i < sizeof(unsigned int); i++)
-	{
 		temp[i] = rand() & 0xFF;
-	}
 
 	*val = ((*val) % (maxval - minval + 1)) + minval;
 	assert((*val <= maxval) && (*val >= minval));
+
 	return  *val;
 }
 

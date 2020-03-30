@@ -18,6 +18,7 @@ int tabular_fibonacci(int n, int* hashT) {
         return 1;
     for (int  k = 3; k <= n; k++)
         hashT[k] = hashT[k - 1] + hashT[k - 2];
+
     return hashT[n];
 }
 

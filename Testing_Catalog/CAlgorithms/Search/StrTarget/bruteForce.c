@@ -14,8 +14,7 @@
 #include "main.h"
 
 // algorithm
-int brute_force(char* text, char* pattern)
-{
+int brute_force(char* text, char* pattern) {
     int marker = 0;
     int n = strlen(text);
     int m = strlen(pattern);

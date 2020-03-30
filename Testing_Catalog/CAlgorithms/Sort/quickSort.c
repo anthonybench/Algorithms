@@ -12,8 +12,7 @@
 #include "main.h"
 
 // utility
-int partition(int* array, int low, int high)
-{
+int partition(int* array, int low, int high) {
     //parameters
     int pivot = low;
     int i = low;
@@ -34,8 +33,7 @@ int partition(int* array, int low, int high)
 }
 
 // algorithm
-void quick_sort(int* array, int low, int high)
-{
+void quick_sort(int* array, int low, int high) {
     if (low >= high)
         return;
 
