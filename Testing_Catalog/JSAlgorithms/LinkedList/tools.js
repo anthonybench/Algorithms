@@ -5,7 +5,7 @@
 //=============================================
 //=============================================
 
-// General Printing
+// Print Borders
 let border = function (c) {
   if (typeof c != "string")
     console.log("Invalid input. Use: 's', 'm', 'l' or 'd'");
@@ -22,6 +22,7 @@ let border = function (c) {
   return;
 };
 
+// Print Whitespace
 let space = function (n) {
   if (n < 1)
     console.log("Invalid input. Use int >= 0");
@@ -36,3 +37,4 @@ module.exports = {
   border,
   space
 }
+
