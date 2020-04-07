@@ -9,6 +9,7 @@ class Node {
   constructor(data) {
     this.data = data;
     this.next = null;
+    this.tail = null;
   }
 }
 
@@ -16,17 +17,24 @@ class Node {
 class LLL {
   constructor() {
     this.head = null;
+    this.tail = null;
   }
 
   //add new node
   add(data) {
     const newNode = new Node(data);
     
-    if (!this.head)
+    if (!this.head) {
       this.head = newNode;
+      this.tail = this.head;
+    }
     else {
       newNode.next = this.head;
       this.head = newNode;
+      let marker = this.head;
+      while (marker.next)
+        marker = marker.next;
+      this.tail = marker;
     }
     return;
   }
@@ -43,8 +51,31 @@ class LLL {
       while(current.next.next)
         current = current.next;
       current.next = null;
+      this.tail = current;
     }
     return;
+  }
+
+  //reverse list (wrapper)
+  reverse() {
+    let temp = this.head;
+    this.reverseW(this.head);
+    this.tail = temp;
+    
+    return;
+  }
+  //reverse list (work)
+  reverseW(curr) {
+    if (!curr)
+      return null;
+    if (!curr.next) {
+      this.head = curr;
+      return curr;
+    }
+    let temp = this.reverseW(curr.next);
+    temp.next = curr;
+    curr.next = null;
+    return curr;
   }
 
   //display entire list
@@ -65,6 +96,17 @@ class LLL {
       console.log(res);
     }
     return;
+  }
+
+  //display head
+  peekHead() {
+    console.log("Head: ", this.head.data);
+    return;
+  }
+
+  //display tail
+  peekTail() {
+    console.log("Tail: ", this.tail.data);
   }
 
 }

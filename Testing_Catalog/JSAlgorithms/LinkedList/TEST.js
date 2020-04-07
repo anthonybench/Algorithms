@@ -33,6 +33,19 @@ myList.add(2);
 myList.display();
 myList.add(1);
 myList.display();
+myList.peekHead();
+myList.peekTail();
+
+tool.space(2);
+tool.border("M");
+console.log("List Reversal")
+tool.border("S");
+
+//reversal demonstration
+myList.reverse();
+myList.display();
+myList.peekHead();
+myList.peekTail();
 
 tool.space(2);
 tool.border("M");
