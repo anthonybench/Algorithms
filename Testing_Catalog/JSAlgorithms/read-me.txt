@@ -1,7 +1,0 @@
-
-
-
-
-to run a program:
-
-node file.js
