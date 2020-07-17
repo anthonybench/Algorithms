@@ -102,7 +102,6 @@ class LLL {
       }
       console.log("Removal failed: data not found.");
     }
-    
     return;
   }
 

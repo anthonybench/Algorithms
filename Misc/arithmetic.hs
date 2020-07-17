@@ -275,15 +275,22 @@ evalAST (UnOpNode tok down)
 -- **************************************
 -- User Function
 -- **************************************
-compute :: [Char] -> Int
-compute s = evalAST(rpnToAst(parse(s)))
+eval :: [Char] -> Int
+eval s = evalAST(rpnToAst(parse(s)))
 
 
--- tests
-s1 = "3 + 2 - (9 / 3)" -- 2
-s2 = "sq 10" -- 100
-s3 = "sq neg 2" -- 4
-s4 = "neg sq 2" -- -4
-s5 = "neg 3 * neg 2" -- 6
-s6 = "-3"
-s7 = "3+-4"
+-- FIN ----------------------------------------------------
+
+
+
+
+-- **************************************
+-- Examples
+-- **************************************
+-- eval = "3 + 2 - (9 / 3)" -- 2
+-- eval = "sq 10" -- 100
+-- eval = "sq neg 2" -- 4
+-- eval = "neg sq 2" -- -4
+-- eval = "neg 3 * neg 2" -- 6
+-- eval = "-3"
+-- eval = "3+-4"
