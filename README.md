@@ -1,6 +1,8 @@
 ﻿# Algorithm Catalog / Testing
 ### Authored by: *Isaac A.B. Yep*
 
+![GitHub](https://img.shields.io/github/license/anthonybench/Algorithms)
+
 For both development and educational use, these algorithms are organized by purpose into testing environments to demonstrate their utility and compare variations of differing complexities. 
 
 # Languages
