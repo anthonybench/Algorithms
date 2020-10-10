@@ -18,7 +18,7 @@ This repository serves as a catalog to organize classical algorithms and solutio
   - [Usage](#usage-)
   - [Technologies](#technologies-)
   - [Acknowledgements](#acknowledgements-)
-  - [License/Stats/Author](#license,-stats,-author-)
+  - [License/Stats/Author](#license-stats-author-)
 
 <br />
 
