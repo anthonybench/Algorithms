@@ -1,99 +1,88 @@
-﻿# Algorithm Catalog / Testing
-### Authored by: *Isaac A.B. Yep*
+﻿# **Algorithms**
+*A catalog of classical algorithms, organized by language.*
 
-![GitHub](https://img.shields.io/github/license/anthonybench/Algorithms)
+<br />
 
-For both development and educational use, these algorithms are organized by purpose into testing environments to demonstrate their utility and compare variations of differing complexities. 
+### Welcome to Algorithms!
+<hr>
 
-# Languages
+This repository serves as a catalog to organize classical algorithms and solutions to staple computer science problems across several languages. Although this repository is public, it is a personal project of my own, and I do not look at pull requests.
 
-Currently, 5 languages are peing supported in the project, each with their own directory:
+<br />
 
-* #### JSAlgorithms (Java Script)
+### Table of Contents 📖
+<hr>
 
-* #### CAlgorithms (C Language) *The only finished one at the moment*
+  - [Welcome](#welcome-to-algorithms)
+  - [**Get Started**](#get-started-)
+  - [Usage](#usage-)
+  - [Technologies](#technologies-)
+  - [Acknowledgements](#acknowledgements-)
+  - [License/Stats/Author](#license,-Stats,-author-)
 
-* #### CppAlgorithms (C++)
+<br />
 
-* #### JavaAlgorithms (Java)
+### Get Started 🚀
+<hr>
 
-* #### PythonAlgorithms (Python)
+Exploring `Testing_Catalog/`, you will see directories with names corresponding to their respective languages. In each, you will see a subset of the following directories:
 
+`ADT/` - classical, simple abstract datatypes such as the various linked list flavors, and binary trees.
 
-# Testing_Catalog/
+`Graph/` - for traditional path finding and minimal spanning tree algorithms.
 
+`Return/` - for classical computer science problems.
 
-### Graph
+`Search/` - for searching a given target in some data structure, typically an array. This will have two sub-directories to divide prupose, `IntTarget/` and `StrTarget/`.
 
-Algorithms/Solutions Involving graphs, such as path-finding or tree navigation
+<br />
 
+### Usage ⚙
+<hr>
 
-### Return
-
-For general interesting problems that involving returning some solution, and that offer good examples of dynamic programming and other optimizations to naive solutions.
-
-### Search
-
-For searching for a given target in some data structure:
-* #### IntTarget
-* #### StrTarget
-
-
-
-### Sort
-
-For Sorting an array into ascending order.
-
-
-
-# General Style Guide
-<blockquote>
-	<p>//====================================================</p>
-	<p>// PROGRAM TITLE; Course title; Course number</p>
-	<p>// Isaac A.B. Yep</p>
-	<p>// Due: 1/2/34</p>
-	<p>//====================================================</p>
-
-	#pre-processor
-	#statements
-	#go
-	#here
-
-	/*************************************************
-		Header for definitions
-	*************************************************/
-	// each definition gets a short label
-	public class Shark {
-		public Shark(int n = 0) {
-			Teeth = n;
-		}
-		int Teeth;
-		void Bite() {
-			Console.Write("Chomp!\n");
-		}
-	}
-	// another short label
-	public class BabyShark : Shark {
-		public BabyShark(int n = 0) : Shark(n) {
-			if (n > 2)
-				Teeth = n - 2;
-			else
-				Teeth = 0;
-		}
-		void Sing() {
-			Console.Write("Bayyybeeee shark! Do do! Do do do do!\n");
-		}
-	}
-</blockquote>
-
-
+In any director of your choosing, say `Testing_Catalog/C/Return/` for example, you will see that each problem has its own sub-directory. In such a directory, there will be a collection of files to support the solutions testing and comparison:
 
 | File | Description |
-|--|--|
-| TEST.c | program entry |
-| tools.c | printing tools |
-| Makefile | build/workflow |
-| solution.c | various algorithms in seperate files |
-| rng.h | random number generator for testing purposes |
-| main.h | tool deceleration and pre-processing |
+|---|---|
+| `TEST.c` | contains the executable test bench program |
+| `tools.c` | printing tools |
+| `Makefile` | build/workflow |
+| `rng.h` | random number generator for testing |
+| `main.h` | tool deceleration and pre-processing |
+<br />
 
+Along with the above files are the files containing each solution, named simply after the solution's colloquial name.
+
+<br />
+
+### Technologies 🧰
+<hr>
+
+  - [Oracle SE JDK](https://www.oracle.com/java/technologies/javase-downloads.html)
+  - [Node.js](https://nodejs.org/en/)
+  - [Python 3.x](https://www.python.org/downloads/)
+  - [GCC](https://gcc.gnu.org/)
+
+<br />
+
+### Acknowledgements 💙
+<hr>
+
+My professors at ***Portland State University***, especially *David Ely* and *Fei Xie*, for pushing enough assignments on me to inspire this personal project.
+
+<br />
+
+### License, Stats, Author 📜
+<hr>
+<!-- badge cluster -->
+
+![GitHub](https://img.shields.io/github/license/anthonybench/Algorithms) ![GitHub language count](https://img.shields.io/github/languages/count/anthonybench/Algorithms) ![GitHub top language](https://img.shields.io/github/languages/top/anthonybench/Algorithms)
+
+<!-- / -->
+See [License](https://opensource.org/licenses/MIT) for the full license text.
+
+This repository was authored by *Isaac Yep*.
+
+[Back to Table of Contents](#table-of-contents-)
+
+![Imgur](https://i.imgur.com/jtNwEWu.png)
