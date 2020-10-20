@@ -68,12 +68,16 @@ Along with the above files are the files containing each solution, named simply 
 ### Acknowledgements 💙
 <hr>
 
-My professors at ***Portland State University***, especially *David Ely* and *Fei Xie*, for pushing enough assignments on me to inspire this personal project.
+My professors at ***Portland State University***, especially *David Ely* and *Fei Xie*, for pushing enough assignments on me to inspire this project.
 
 <br />
 
 ### License, Stats, Author 📜
 <hr>
+
+<img align="right" alt="example image tag" src="https://i.imgur.com/jtNwEWu.png" width="200" />
+
+
 <!-- badge cluster -->
 
 ![GitHub](https://img.shields.io/github/license/anthonybench/Algorithms) ![GitHub language count](https://img.shields.io/github/languages/count/anthonybench/Algorithms) ![GitHub top language](https://img.shields.io/github/languages/top/anthonybench/Algorithms)
@@ -85,4 +89,3 @@ This repository was authored by *Isaac Yep*.
 
 [Back to Table of Contents](#table-of-contents-)
 
-![Imgur](https://i.imgur.com/jtNwEWu.png)
